@@ -23,7 +23,7 @@ library(MASS)
 # Scatterplot with Linear Trendline
 ggplot(Shopping_data, aes(x = AnnualIncome, y = SpendingScore)) +
   geom_point() + 
-  geom_smooth(method = "lm", color = "blue", se = FALSE) +  # linear trendline
+  geom_smooth(method = "lm", color = "blue", se = FALSE) + 
   labs(title = "Scatterplot of Annual Income vs Spending Score",
        x = "Annual Income (in USD)",
        y = "Spending Score") +
@@ -43,9 +43,6 @@ ggplot(Shopping_data, aes(x = SpendingScore)) +
 
 
 # Question-2(A):
-
-# Load required library
-library(ggplot2)
 
 # Boxplot of Spending Score by Annual Income categories
 ggplot(Shopping_data, aes(x = factor(AnnualIncome), y = SpendingScore)) +
